@@ -41,7 +41,7 @@ public class ConfigurationManager {
 					System.out.println("Running test cases on "+envName +" Environment ");
 					fp = new FileInputStream(".\\src\\test\\resources\\config\\dev.config.properties");
 					
-					
+						
 					break;
 				case "uat":
 
