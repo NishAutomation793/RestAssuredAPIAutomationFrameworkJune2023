@@ -14,6 +14,8 @@ import com.qa.gorest.base.BaseTest;
 import com.qa.gorest.client.RestClient;
 import com.qa.gorest.constants.APIHttpStatus;
 
+import io.qameta.allure.Description;
+
 public class GetUserTest extends BaseTest{
 	
 	@BeforeMethod
@@ -23,6 +25,7 @@ public class GetUserTest extends BaseTest{
 		
 	}
 	
+	@Description("This is for Fetching ALl Users Information APi Test")
 	@Test
 	public void getAllUsers() {
 		
@@ -32,6 +35,7 @@ public class GetUserTest extends BaseTest{
 		
 	}
 	
+	@Description("For Fetching Single User API Test")
 	@Test
 	  public void getSingleUsers() {
 	  
@@ -40,6 +44,7 @@ public class GetUserTest extends BaseTest{
 	  
 	  }
 	  
+	@Description("For Fetching User with Query Params API Test")
 	@Test
 	  public void getUsers_with_Query_Params() {
 	  

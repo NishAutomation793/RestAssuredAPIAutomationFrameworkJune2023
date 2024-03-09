@@ -15,6 +15,7 @@ import com.qa.gorest.utils.XMLPathValidatorUtil;
 import static org.hamcrest.Matchers.*;
 import static org.testng.Assert.assertEquals;
 
+import io.qameta.allure.Description;
 import io.restassured.response.Response;
 
 public class GetCircuitAPiTest extends BaseTest {
@@ -25,6 +26,7 @@ public class GetCircuitAPiTest extends BaseTest {
 
 	}
 
+	@Description("This is for Getting All Circuits Infor Test")
 	@Test
 	public void getAllCircuitsTest() {
 
@@ -42,6 +44,7 @@ public class GetCircuitAPiTest extends BaseTest {
 
 	}
 
+	@Description("This is for Getting all Circuits Infor Test with XML Response")
 	@Test
 	public void getAllCircuitsTestXmlExtraction() {
 

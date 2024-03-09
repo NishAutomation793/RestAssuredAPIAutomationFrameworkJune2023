@@ -12,6 +12,7 @@ import com.qa.gorest.base.BaseTest;
 import com.qa.gorest.client.RestClient;
 import com.qa.gorest.constants.APIHttpStatus;
 
+import io.qameta.allure.Description;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 
@@ -28,6 +29,7 @@ public class AmadeusAPIOAuth2Test extends BaseTest {
 		System.out.println("Access Token for Oauth 2.0 is :" + accessToken);
 	}
 
+	@Description("This is the Get Flight Details API Test")
 	@Test
 	public void getFlightDetails() {
 		// Here we have to generate separate

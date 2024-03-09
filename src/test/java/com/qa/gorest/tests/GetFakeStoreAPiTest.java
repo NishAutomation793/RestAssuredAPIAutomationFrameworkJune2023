@@ -7,6 +7,8 @@ import com.qa.gorest.base.BaseTest;
 import com.qa.gorest.client.RestClient;
 import com.qa.gorest.constants.APIHttpStatus;
 
+import io.qameta.allure.Description;
+
 public class GetFakeStoreAPiTest extends BaseTest{
 
 	@BeforeMethod
@@ -16,6 +18,7 @@ public class GetFakeStoreAPiTest extends BaseTest{
 		
 	}
 	
+	@Description("This is for fetching all the Products info from Fake Store API Test")
 	@Test
 	public void getAllProductsFakeStoreAPiTest() {
 		
@@ -25,6 +28,7 @@ public class GetFakeStoreAPiTest extends BaseTest{
 		
 	}
 	
+	@Description("This is for Fetching Single Product from Fake Store APi Test")
 	@Test
 	public void getSingleProductFakeStoreAPiTest() {
 		

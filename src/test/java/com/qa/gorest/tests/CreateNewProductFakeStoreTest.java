@@ -9,6 +9,7 @@ import com.qa.gorest.client.RestClient;
 import com.qa.gorest.constants.APIHttpStatus;
 import com.qa.gorest.pojo.ProductFakeStorePojo;
 
+import io.qameta.allure.Description;
 import io.restassured.response.Response;
 
 public class CreateNewProductFakeStoreTest extends BaseTest {
@@ -32,6 +33,7 @@ public class CreateNewProductFakeStoreTest extends BaseTest {
 				};
 	}
 	
+	@Description("This is the Creation of New Product In Product APi")
 	@Test(dataProvider="getData")
 	public void createNewProduct(String title,double price, String description, String image, String category)
 	{

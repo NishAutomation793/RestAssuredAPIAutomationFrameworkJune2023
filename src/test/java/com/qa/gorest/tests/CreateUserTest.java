@@ -16,6 +16,8 @@ import com.qa.gorest.pojo.UserPojo;
 import com.qa.gorest.utils.ExcelUtil;
 import com.qa.gorest.utils.StringUtil;
 
+import io.qameta.allure.Description;
+
 public class CreateUserTest extends BaseTest {
 
 	//Here we are creating multiple objects of RestClient so that different calls should get their separate objects
@@ -36,6 +38,7 @@ public class CreateUserTest extends BaseTest {
 		return obj;
 	}
 	
+	@Description("This is for Creation of new Users")
 	@Test(dataProvider ="getSheetData")
 	public void createUser(String name, String gender, String status)
 	{

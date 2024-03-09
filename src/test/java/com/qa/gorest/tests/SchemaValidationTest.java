@@ -12,6 +12,8 @@ import com.qa.gorest.constants.APIHttpStatus;
 import com.qa.gorest.pojo.UserPojo;
 import com.qa.gorest.utils.StringUtil;
 
+import io.qameta.allure.Description;
+
 
 
 public class SchemaValidationTest extends BaseTest{
@@ -25,6 +27,7 @@ public class SchemaValidationTest extends BaseTest{
 	}
 	
 	
+	@Description("For Checking User Schema Validation Test")
 	@Test
 	public void createUserSchemaValidation() {
 
@@ -41,6 +44,7 @@ public class SchemaValidationTest extends BaseTest{
 
 }
 	
+	@Description("For Checking User Schema Validation Test in GET Call")
 	@Test
 	public void getUserSchemaValidation()
 	{
