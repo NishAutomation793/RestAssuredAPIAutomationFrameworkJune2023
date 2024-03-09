@@ -61,7 +61,7 @@ pipeline
         }
         
         
-        stage('Publish Extent Report'){
+        stage('Publish Regression Extent Report'){
             steps{
                      publishHTML([allowMissing: false,
                                   alwaysLinkToLastBuild: false, 
@@ -97,7 +97,7 @@ pipeline
                                   alwaysLinkToLastBuild: false, 
                                   keepAll: true, 
                                   reportDir: 'reports', 
-                                  reportFiles: 'TestExecutionExtentReport.html', 
+                                  reportFiles: 'APIExecutionReport.html', 
                                   reportName: 'HTML API Sanity Extent Report', 
                                   reportTitles: ''])
             }
