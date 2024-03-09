@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="API Regression Suite" verbose="2">
+
+	<listeners>
+		<listener
+			class-name="com.qa.gorest.listeners.ExtentReportListener" />
+	</listeners>
+
+	<test name="Go Rest Create User API Test">
+		<parameter name="baseURI" value="https://gorest.co.in"></parameter>
+			<classes>
+			<class name="com.qa.gorest.tests.CreateUserTest" />
+		</classes>
+
+	</test>
+	
+	<test name="Go Rest Schema Validation API Test">
+		<parameter name="baseURI" value="https://gorest.co.in"></parameter>
+			<classes>
+			<class name="com.qa.gorest.tests.SchemaValidationTest" />
+		</classes>
+
+	</test>
+
+	<test name="Go Rest Get User API Test">
+		<parameter name="baseURI" value="https://gorest.co.in"></parameter>
+			<classes>
+			<class name="com.qa.gorest.tests.GetUserTest" />
+		</classes>
+
+	</test>
+
+	<test name="Get Circuit API Test">
+		<parameter name="baseURI" value="http://ergast.com"></parameter>
+		<classes>
+			<class name="com.qa.gorest.tests.GetCircuitAPiTest" />
+		</classes>
+
+	</test>
+
+
+	<test name="Create Product API Test Fake Store">
+		<parameter name="baseURI" value="https://fakestoreapi.com"></parameter>
+			<classes>
+			<class name="com.qa.gorest.tests.CreateNewProductFakeStoreTest" />
+		</classes>
+
+	</test>
+
+
+	<test name="Amadeus API Flight Booking est">
+		<parameter name="baseURI" value="https://test.api.amadeus.com"></parameter>
+		<parameter name="grantType" value="client_credentials"></parameter>
+		<parameter name="clientId"
+	value="Vu1M41311HemtKrGkcJV3X2M6hA3hFg7"></parameter>
+		<parameter name="clientSecret" value="mBRtwFAVNJ8JBQ9M"></parameter>
+
+
+		<classes>
+			<class name="com.qa.gorest.tests.AmadeusAPIOAuth2Test" />
+		</classes>
+
+	</test>
+
+	
+			<test name="Get Fake Store API Test">
+		<parameter name="baseURI" value="https://fakestoreapi.com"></parameter>
+			<classes>
+			<class name="com.qa.gorest.tests.GetFakeStoreAPiTest" />
+		</classes>
+
+	</test>
+	
+
+</suite> 
