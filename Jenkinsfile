@@ -39,7 +39,7 @@ pipeline
             steps {
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
                     git 'https://github.com/NishAutomation793/RestAssuredAPIAutomationFrameworkJune2023.git'
-                    bat "mvn clean install"
+                    bat "mvn clean test -Dsurefire.suiteXmlFiles=src/test/resources/testRunners/testng_regression.xml"
                     
                 }
             }
